@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage('hi') {
+        stage('hi--') {
             steps {
                 sh 'npm --version'
             }
