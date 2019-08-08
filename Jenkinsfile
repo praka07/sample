@@ -7,9 +7,6 @@ pipeline {
             }
         }
          stage('deploy') {
-             when {
-                 branch 'master'
-             }
             steps {
                 sh 'node index.js'
             }
