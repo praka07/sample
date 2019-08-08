@@ -5,10 +5,15 @@ pipeline {
             steps {
                 sh 'npm --version'
             }
-         stage('run index.js') {
+        }
+         stage('deploy') {
+             when {
+                 branch 'master'
+             }
             steps {
                 sh 'node index.js'
             }
         }
     }
+
 }
