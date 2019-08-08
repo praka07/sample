@@ -1,9 +1,13 @@
 pipeline {
     agent any
     stages {
-        stage('hi--') {
+        stage('welcome') {
             steps {
                 sh 'npm --version'
+            }
+         stage('run index.js') {
+            steps {
+                sh 'node index.js'
             }
         }
     }
